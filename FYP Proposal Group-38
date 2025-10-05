@@ -1,0 +1,47 @@
+Physics-Informed LLM-Based Weather Prediction System
+FYP Co-Ordinator:
+Dr. Muhammad Ilyas
+Supervisor:
+Dr Fahad Maqbool
+
+
+ 
+Candidates: M Abubakar (BSCS51F22S026)     	 (TL)                           M Awais Ilyas (BSCS51F22S018)		 
+   M Zeeshan Asif (BSCS51F22S017)		
+
+
+
+BSCS SELF SUPPORT I 2022/2026 
+
+
+
+1	ABSTRACT
+
+Traditional Numerical Weather Prediction (NWP) models resolve complex physical equations for atmospheric dynamics. However, it requires immense computational resources and often lack accuracy. On the other hand, data-driven Machine Learning (ML) and Large Language Models (LLMs) offer quicker prediction ignoring the physical consistency. This project introduces a hybrid framework that combines Physics-Informed Neural Networks (PINNs) with ML and LLMs to develop a physics-consistent and interpretable weather prediction system. PINNs embed governing equations like Navier–Stokes and thermodynamic laws into the learning process, also ensure that the forecasts must follow fundamental physics. The ML component improves feature learning from large-scale weather datasets. In contrast, the LLM interprets and translates model outputs into human-readable forecasts. The proposed framework aims to attain accurate, physically valid, and computationally effective short-term weather predictions. It also covers the gap between traditional physics-based models and modern AI-driven tools.
+
+2	Background and Justification
+2.1 Background
+Weather forecasting has been one of the most crucial scientific challenge. There are traditional methods which rely on atmospheric observations like cloud patterns , wind direction and speed. But the main concern remains its accuracy which is every low and on large scale predictability becomes hard.
+In 19th century when telegraph invented, Data started to transfer on long distances. It allowed us to make first weather map and storm warnings.  However, these methods rely on highly factual data and shortage of mathematical accuracy.
+With Numerical Weather Prediction (NWP) invention in the 20th century, which allowed models atmospheric behavior by computing physical equations like the Navier–Stokes, thermodynamic, and radiation equations across a 3D grid. NWP systems require supercomputers for accuracy, which are expensive, and often struggle with quicker forecasts.
+Recent development in Machine Learning (ML) and Artificial Intelligence (AI) has transformed weather prediction. Models like FourCastNet (NVIDIA, 2022) and GraphCast (Google DeepMind, 2023) use deep learning to generate high-resolution forecasts faster and more efficiently than traditional NWP. However, ML models have some drawbacks such as:
+•	Limited understanding of physical laws (risking unrealistic outputs),
+•	Poor generalization in data-scarce regions, and
+•	Lack of interpretability.
+To confront these challenges, Physics-Informed Neural Networks (PINNs) have emerged as a bridge between physics and ML. PINNs integrate fundamental physical equations into their training process directly. It also ensures that the predictions follow conservation laws and remain physically consistent.
+
+Contrary to it , Large Language Models (LLMs) like GPT and LLaMA exhibit extraordinary proficiency to analyze, describe, and address complex data in natural language.In weather forecasting, they can refine complex outputs into clear reports , integrate data from text, numbers, and satellite imagery, and enhances user accessibility. In spite of the progress, no comprehensive tool currently integrates PINNs, ML, and LLMs for weather prediction. A hybrid physics-informed LLM model offers the potential to gain physically consistent, computationally efficient, and human-readable forecasts.
+
+2.2 Justification
+The proposed Physics-Informed LLM Weather Prediction System incorporates the strengths of physics-based and AI-driven methods to overcome current forecasting limitations.
+
+1.	Physical Characteristics:
+All the predictions follow Laws of Physics such as conservation of mass, energy, and momentum etc. And this is ensured by PINNs which prevents unrealistic results such as temperature exceeding more than it can exist is natural environment.
+2.	Computational Efficiency:
+Unlike NWP systems that depend on supercomputers, this hybrid tool can generate accurate short-term forecasts faster on moderate hardware.
+3.	Accuracy in Sparse Data Regions:
+Physics constraints assist PINNs infer missing values in under-observed areas, while LLMs help in contextual reasoning when data is limited.
+4.	Understanding and Communication:
+Complex outputs of model are converted into human-readable form by LLM module. This helps non-technical users such as farmers, policymakers etc. to easily access the system.
+5.	Public Effects:
+Proper and on time forecasts allow the disaster managers and other authorities to prepare in best possible way. This results in decreased economic losses, and strengthens the implementation of safety measures in vulnerable regions.
